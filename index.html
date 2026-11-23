@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cidade Digital — Protótipo conceitual (proposta de Caroline Wilhelm S.)</title>
+<meta name="description" content="Protótipo conceitual de serviços digitais municipais unificados para Canoas e Cachoeirinha (RS). Não é um site oficial. Dados fictícios.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230b6e4f'/><path d='M9 22V12l7-4 7 4v10h-5v-6h-4v6z' fill='white'/></svg>">
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<div class="proto-banner" role="note">
+  <strong>Protótipo conceitual</strong> — proposta de Caroline Wilhelm S. · Não é um site oficial da prefeitura · Todos os dados são <strong>fictícios (exemplo)</strong>.
+</div>
+<header class="topbar">
+  <div class="wrap topbar-in">
+    <a href="#/" class="brand" aria-label="Início">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M9 22V12l7-4 7 4v10h-5v-6h-4v6z" fill="currentColor"/></svg></span>
+      <span><span class="brand-city" data-city-name>Canoas</span><span class="brand-sub">Serviços ao cidadão · protótipo</span></span>
+    </a>
+    <div class="topbar-tools">
+      <div class="city-switch" role="group" aria-label="Escolher cidade do protótipo">
+        <button type="button" data-city="canoas" aria-pressed="true">Canoas</button>
+        <button type="button" data-city="cachoeirinha" aria-pressed="false">Cachoeirinha</button>
+      </div>
+      <div class="a11y-tools" role="group" aria-label="Acessibilidade">
+        <button type="button" id="fontDown" aria-label="Diminuir texto">A−</button>
+        <button type="button" id="fontUp" aria-label="Aumentar texto">A+</button>
+        <button type="button" id="contrast" aria-pressed="false" aria-label="Alto contraste">◐</button>
+      </div>
+      <button class="user-chip" type="button" aria-label="Conta de exemplo: Maria (fictícia)"><span aria-hidden="true">M</span><span class="hide-sm">Maria (exemplo)</span></button>
+    </div>
+  </div>
+  <nav class="wrap mainnav" aria-label="Principal">
+    <a href="#/">Início</a>
+    <a href="#/processo">Meus processos</a>
+    <a href="#/iptu">IPTU e certidões</a>
+    <a href="#/saude">Saúde</a>
+    <a href="#/endereco">Endereço e mapa</a>
+    <a href="#/proposta">Sobre a proposta</a>
+  </nav>
+</header>
+<main id="conteudo" tabindex="-1"></main>
+<footer class="footer">
+  <div class="wrap footer-in">
+    <div>
+      <strong>Protótipo conceitual — proposta de Caroline Wilhelm S.</strong> (<a href="https://carolinew.net" rel="noopener">carolinew.net</a>)<br>
+      Simulação de UX para apresentação às prefeituras de Canoas e Cachoeirinha. Não substitui os canais oficiais. Nenhum dado aqui é real.
+    </div>
+    <div class="footer-ref">Referências: gov.br Design System · GOV.UK Design System · eMAG 3.1 · WCAG 2.2 AA · Lei 14.129/2021 (Governo Digital) · Lei 13.460/2017</div>
+  </div>
+</footer>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
